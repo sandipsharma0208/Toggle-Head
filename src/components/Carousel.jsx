@@ -6,30 +6,34 @@ const slides = [
   {
     img: carousel,
     title: "Slide Title 1",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-  nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.
-  Numquam sint aperiam temporibus laudantium cupiditate veritatis explicabo iste.`,
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
+           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
+           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
+           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
   },
   {
     img: carousel,
     title: "Slide Title 2",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-  nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.
-  Numquam sint aperiam temporibus laudantium cupiditate veritatis explicabo iste.`,
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
+           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
+           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
+           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
   },
   {
     img: carousel,
     title: "Slide Title 3",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-  nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.
-  Numquam sint aperiam temporibus laudantium cupiditate veritatis explicabo iste.`,
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
+           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
+           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
+           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
   },
   {
     img: carousel,
     title: "Slide Title 4",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-  nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.
-  Numquam sint aperiam temporibus laudantium cupiditate veritatis explicabo iste.`,
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
+           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
+           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
+           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
   },
 ];
 
@@ -79,13 +83,13 @@ const Carousel = () => {
                     />
                   </button>
                 </div>
-                <div style={{ minHeight: "60vh", width:"100%" }}>
-                  <img
-                    src={slide.img}
-                    alt={`Slide ${index + 1}`}
-                    className="carousel-image"
-                  />
-                </div>
+                {/* <div style={{ minHeight: "60vh", width:"100%" }}> */}
+                <img
+                  src={slide.img}
+                  alt={`Slide ${index + 1}`}
+                  className="carousel-image"
+                />
+                {/* </div> */}
               </div>
             </div>
           ))}

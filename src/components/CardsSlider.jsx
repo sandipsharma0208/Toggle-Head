@@ -1,4 +1,5 @@
 import React from "react";
+import arrow from "../assets/arrow.png";
 
 const cards = Array(8).fill({
   title: "Lorem ipsum",
@@ -14,6 +15,10 @@ const CardsSlider = () => {
             <div className="card" key={i}>
               <h4>{card.title}</h4>
               <p>{card.text}</p>
+              <div className="card-know-more">
+                <p>Know More</p>
+                <img src={arrow} alt="Expand" width="20" height="20" className="arrow-icon" />
+              </div>
             </div>
           ))}
         </div>

@@ -1,57 +1,52 @@
 import React, { useState, useEffect } from "react";
 import carousel from "../assets/carousel-2.png";
 import playButton from "../assets/play-icon.png";
-
 const slides = [
   {
     img: carousel,
     title: "Slide Title 1",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
-           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
-           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
+    text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+     sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd`,
   },
   {
     img: carousel,
     title: "Slide Title 2",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
-           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
-           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
+    text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+     sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd`,
   },
   {
     img: carousel,
     title: "Slide Title 3",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
-           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
-           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
+    text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+     sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd`,
   },
   {
     img: carousel,
     title: "Slide Title 4",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tenetur 
-           ad porro eligendi nam laudantium reprehenderit eaque rerum, soluta omnis 
-           nesciunt saepe consequuntur quia recusandae, voluptas, accusamus ab aliquid fugit
-           nulla ipsum sunt consectetur veritatis harum? Ratione corrupti voluptas consequuntur.`,
+    text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+     sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd`,
   },
 ];
-
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-
   const goToSlide = (index) => setCurrentIndex(index);
   const goToPrev = () =>
     setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   const goToNext = () => setCurrentIndex((prev) => (prev + 1) % slides.length);
-
   return (
     <div
       style={{
@@ -94,7 +89,6 @@ const Carousel = () => {
             </div>
           ))}
         </div>
-
         <div className="carousel-indicators">
           {slides.map((_, index) => (
             <span
@@ -109,5 +103,4 @@ const Carousel = () => {
     </div>
   );
 };
-
 export default Carousel;

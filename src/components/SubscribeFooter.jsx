@@ -85,7 +85,7 @@ const SubscribeFooter = () => {
                     aria-label={icon}
                     className="footer-icon"
                   >
-                    <img src={icon} alt="Social Icon" />
+                    <img src={icon} alt="Social Icon" width="20" height="20" />
                   </a>
                 )
               )}
@@ -140,10 +140,7 @@ const SubscribeFooter = () => {
         </div>
 
         <div className="footer-bottom">
-          © 2021 All Rights Reserved.{" "}
-          <a href="#" className="footer-privacy">
-            Privacy Policy
-          </a>
+          © 2021 All Rights Reserved. Privacy Policy
         </div>
       </footer>
     </>

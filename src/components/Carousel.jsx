@@ -4,7 +4,7 @@ import playButton from "../assets/play-icon.png";
 const slides = [
   {
     img: carousel,
-    title: "Slide Title 1",
+    title: "Lorem ipsum",
     text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -12,7 +12,7 @@ const slides = [
   },
   {
     img: carousel,
-    title: "Slide Title 2",
+    title: "Lorem ipsum",
     text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -20,7 +20,7 @@ const slides = [
   },
   {
     img: carousel,
-    title: "Slide Title 3",
+    title: "Lorem ipsum",
     text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -28,7 +28,7 @@ const slides = [
   },
   {
     img: carousel,
-    title: "Slide Title 4",
+    title: "Lorem ipsum",
     text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.

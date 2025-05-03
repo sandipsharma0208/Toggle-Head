@@ -720,7 +720,7 @@
 .carousel-caption {
   flex: 1 1 300px;
   max-width: 550px;
-  padding: clamp(1rem, 5vw, 4rem);
+  padding: 5rem clamp(1rem, 5vw, 4rem);
   box-sizing: border-box;
 }
 .carousel-caption h2 {

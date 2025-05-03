@@ -344,7 +344,7 @@
 .stats-container {
   max-width: 100%;
   margin: 0 auto;
-  padding: clamp(1rem, 5vw, 5.7rem);
+  padding: 2rem clamp(1rem, 5vw, 5.7rem);
   color: #1a3e6e;
   background-color: #f6f6f6;
 }

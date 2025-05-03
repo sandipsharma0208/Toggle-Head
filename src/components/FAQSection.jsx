@@ -45,9 +45,9 @@ const FAQSection = () => {
               >
                 <span className="faq-question">{faq.question}</span>
                 {isOpen ? (
-                  <img src={plus} alt="Collapse" width="20" height="20" />
-                ) : (
                   <img src={remove} alt="Expand" width="20" height="20" />
+                ) : (
+                  <img src={plus} alt="Collapse" width="20" height="20" />
                 )}
               </button>
 

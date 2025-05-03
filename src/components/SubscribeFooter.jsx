@@ -29,8 +29,8 @@ const SubscribeFooter = () => {
               style={{
                 width: "100%",
                 display: "flex",
-                gap: "2rem",
                 flexWrap: "wrap",
+                gap: "2rem",
               }}
             >
               <input
@@ -55,8 +55,6 @@ const SubscribeFooter = () => {
           <img
             src={subscribe}
             alt="Email Subscribe Illustration"
-            width="400"
-            height="300"
             className="subscribe-image"
           />
         </div>

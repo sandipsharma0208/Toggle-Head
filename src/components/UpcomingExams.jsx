@@ -14,6 +14,7 @@ const UpcomingExams = () => {
             Enquire about the examination & register for the exams
           </p>
         </div>
+        <div className= "vertical"></div>
         <div className="exam-box">
           <div className="image-wrapper">
             <img

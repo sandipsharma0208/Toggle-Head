@@ -3,7 +3,7 @@ import arrow from "../assets/arrow.png";
 
 const cards = Array(8).fill({
   title: "Lorem ipsum",
-  text: "Lorem ipsum dolor sit amet...",
+  text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
 });
 
 const CardsSlider = () => {
@@ -17,7 +17,13 @@ const CardsSlider = () => {
               <p>{card.text}</p>
               <div className="card-know-more">
                 <p>Know More</p>
-                <img src={arrow} alt="Expand" width="20" height="20" className="arrow-icon" />
+                <img
+                  src={arrow}
+                  alt="Expand"
+                  width="20"
+                  height="20"
+                  className="arrow-icon"
+                />
               </div>
             </div>
           ))}
